@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Business Expense Tracker</h1>
+
+    <!-- Expense/Income Form -->
+    <div class="form">
+      <h2>Add Income/Expense</h2>
+      <form id="expenseForm">
+        <label for="category">Category:</label>
+        <input type="text" id="category" required>
+        
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required>
+
+        <label for="type">Type:</label>
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Add Record</button>
+      </form>
+    </div>
+
+    <!-- Income/Expense List -->
+    <h2>Transaction Records</h2>
+    <ul id="transactionList"></ul>
+
+    <!-- Pie Chart for visualization -->
+    <h2>Expenses Overview</h2>
+    <canvas id="expenseChart" width="400" height="400"></canvas>
+  </div>
+
+  <script src="b.js"></script>
+</body>
+</html>
