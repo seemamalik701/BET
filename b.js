@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
           labels: ["Income", "Expenses"],
           datasets: [{
             data: [categories.income, categories.expense],
-            backgroundColor: ["#FF7E5F", "#F44336"], // Vibrant colors for Income and Expenses
+            backgroundColor: ["#4CAF50", "#F44336"], // Vibrant colors for Income and Expenses
           }]
         },
         options: {
